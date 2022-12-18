@@ -1,0 +1,74 @@
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0 auto;
+}
+
+.gradient-bg {
+    background-color: #52b4ff;
+    background-image: radial-gradient(
+            at 51% 77%,
+            hsla(172, 93%, 52%, 1) 0,
+            hsla(172, 93%, 52%, 0) 50%
+        ),
+        radial-gradient(
+            at 77% 61%,
+            hsla(315, 90%, 67%, 1) 0,
+            hsla(315, 90%, 67%, 0) 50%
+        ),
+        radial-gradient(
+            at 56% 26%,
+            hsla(249, 92%, 69%, 1) 0,
+            hsla(249, 92%, 69%, 0) 50%
+        );
+    min-height: 100vh;
+}
+
+.glass {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.5px);
+    -webkit-backdrop-filter: blur(9.5px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.glass-form {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.5px);
+    -webkit-backdrop-filter: blur(9.5px);
+    border: 1px solid rgba(255, 255, 255, 0.63);
+}
+
+.glass-button {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.77);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.5px);
+    -webkit-backdrop-filter: blur(9.5px);
+    border: 1px solid rgba(255, 255, 255, 0.63);
+}
+
+#bootstrap-overrides .btn:hover {
+    background: rgba(134, 134, 134, 0.412);
+}
+
+form {
+    width: 100%;
+}
+
+::placeholder,
+input {
+    color: white;
+    font-size: 18px;
+    font-weight: semibold;
+}
+
+#shortenlink:hover {
+    color: rgb(0, 21, 255) !important;
+    transition: 250ms linear 0s;
+}

@@ -36,7 +36,7 @@ class ShortenerController extends Controller
         // $shortener = Shortener::findOrFail($slug);
         $shortener = Shortener::where('slug', $slug)->first();
 
-        if($shortener == null) return redirect()->route('notfoud');
+        if(!$shortener) return redirect()->route('notfound');
 
         if(str_starts_with($shortener->link, 'http://') || str_starts_with($shortener->link, 'https://'))
             $link = $shortener->link;

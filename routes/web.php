@@ -36,4 +36,4 @@ Route::get('/+{slug}', [
 Route::get('/notfound', function() {
     return view('notfound', ['title' => 'Not Found']);
 }
-);
+) -> name('notfound');
